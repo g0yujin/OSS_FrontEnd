@@ -1,0 +1,385 @@
+/* 헤더 스타일 */
+#header {
+    background-color: #ffffff;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    text-align: center;
+}
+
+.nav-list {
+    display: inline-flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list li {
+    margin: 0 30px;
+}
+
+.nav-list .list-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: 700;
+    font-size: 18px;
+    font-family: 'Apple SD Gothic Neo', sans-serif;
+}
+
+.nav-list .list-link:hover {
+    color: #007bff;
+}
+
+/* 본문 스타일 */
+main {
+    margin-top: 60px; /* 헤더 높이만큼 추가 */
+}
+
+
+
+
+/* Home */
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+}
+
+.home-content h1 {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-family: 'Palanquin Dark', sans-serif;
+    font-weight: 600;
+    font-size: 72px;
+}
+
+.home-content h3 {
+    margin-top: 0;
+    font-family: 'Apple SD Gothic Neo', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #555555;
+}
+.home-content h4 {
+    margin-top: -15px;
+    font-family: 'Apple SD Gothic Neo', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #555555;
+}
+
+.profile-image {
+    margin-top: 20px;
+    width: 300px;
+    height: auto;
+    
+}
+
+
+
+
+/* About */
+#about {
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.about-content {
+    max-width: 1000px;
+    text-align: center;
+}
+
+.about-content h2 {
+    font-family: 'Palanquin Dark', sans-serif;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px; /* 사진과 정보 사이의 간격 */
+}
+
+.about-profile-image {
+    width: 250px;
+    height: auto;
+    justify-content: center;
+    margin-top:-20px;
+}
+
+.about-info {
+    text-align: left;
+}
+
+.about-info p {
+    font-family: 'Apple SD Gothic Neo', sans-serif;
+    font-size: 20px;
+    color: #555555;
+    line-height: 1.6;
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+    margin-bottom: 50px;
+    padding: 15px 20px; 
+    background-color: #f1f1f1; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    cursor: pointer;
+}
+
+
+.personal-info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.personal-info li {
+    font-family: 'Apple SD Gothic Neo', sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    white-space: nowrap
+}
+
+.info-label {
+    font-weight: 1000;
+    color: #333;
+    margin-right: 10px;
+    min-width: 150px; 
+    text-align: left;
+    display: inline-block; /* 라벨과 내용을 구분하기 위해 */
+}
+
+.personal-info li span + span {
+    flex: 1; /* 내용 부분이 남은 공간을 차지하도록 */
+}
+
+.link-image {
+    width: 50px;
+    height: auto;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+
+/* What I Love */
+#what-i-love {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.love-content {
+    max-width: 1000px;
+    text-align: center;
+    position: relative; 
+}
+
+.love-content h2 {
+    font-family: 'Palanquin Dark', sans-serif;
+    font-size: 48px;
+    margin-bottom: 60px;
+    margin-top: 0px;
+}
+
+.love-slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+    overflow: hidden;
+}
+
+.love-slide {
+    min-width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.love-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%; /* 동그랗게 만들기 */
+    object-fit: cover; /* 이미지가 잘리지 않도록 */
+    margin-bottom: 20px;
+}
+
+.love-slide p {
+    font-family: 'Apple SD Gothic Neo', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.slider-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+   
+}
+
+.slider-controls button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 10px;
+    transition: opacity 0.3s ease;
+    opacity: 0.5;
+    margin: 0 -30px; /* 버튼과 슬라이드 이미지 사이의 간격 설정 */
+}
+
+.slider-controls button:hover {
+    opacity: 1;
+}
+
+.slider-controls img {
+    width: 40px;
+    height: 100px;
+}
+
+
+
+
+
+/* Guest Book */
+#guest-book {
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.guest-book-content {
+    width: 100%;
+    max-width: 400px; /* 최대 너비 설정 */
+    text-align: center;
+}
+
+.guest-book-content h2 {
+    font-family: 'Palanquin Dark', sans-serif;
+    font-size: 48px;
+    margin-bottom: 40px;
+    margin-top: 0px;
+}
+
+#guest-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+#guest-form input,
+#guest-form textarea {
+    font-family: 'Apple SD Gothic Neo', sans-serif;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#guest-form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    color: white;
+    background-color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#guest-form button:hover {
+    background-color: #0056b3;
+}
+
+#guest-messages {
+    margin-top: 20px;
+    text-align: left;
+    width: 100%;
+    max-height: 500px; /* Adjust the max-height as needed */
+    overflow-y: auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.guest-message {
+    border-bottom: 1px solid #ccc;
+    padding: 15px 0;
+    margin-bottom: 10px;
+}
+
+.guest-message h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.guest-message p {
+    margin: 5px 0 0;
+    font-size: 16px;
+}
+
+.guest-message time {
+    display: block;
+    font-size: 12px;
+    color: #999;
+    margin-top: 5px;
+}
+
+.guest-message button {
+    padding: 5px 10px;
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: -20px;
+    float: right; /* 버튼을 오른쪽으로 정렬 */
+}
+
+.guest-message button:hover {
+    background-color: darkred;
+}

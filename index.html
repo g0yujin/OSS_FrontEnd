@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GOYUJIN</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/png" sizes="16x16" href="src/home.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@600&family=Apple+SD+Gothic+Neo:wght@400&display=swap" rel="stylesheet">
+    <script src="http://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script defer src="js/profile.js"></script> 
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <ul class="nav-list">
+                <li><a href="#home" class="list-link">Home</a></li>
+                <li><a href="#about" class="list-link">About Me</a></li>
+                <li><a href="#what-i-love" class="list-link">What I Love</a></li>
+                <li><a href="#guest-book" class="list-link">Guest Book</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main id="app">
+        <!-- Home -->
+        <section id="home">
+            <div class="home-content">
+                <h1></h1>
+                <h3>저에 대해 더 알고 싶으시다면, 스크롤을 내려보세요 :)</h3>
+                <h4>If you want to know more about me, scroll down</h4>
+                <img src="src/home.png" alt="Profile Picture" class="profile-image">
+            </div>
+        </section>
+  
+        <!-- About -->
+        <section id="about">
+            <div class="about-content">
+                <h2>About Me</h2>
+                <div class="about-container">
+                    <img src="src/about-me.png" alt="Profile Picture" class="about-profile-image">
+                    <div class="about-info">
+                        <p id="about-text">안녕하세요 제 이름은 고유진입니다 :) <br>
+                           저는 어릴 때부터 디자인과 꾸미는 것에 관심이 많았고,<br>
+                           작성한 코드를 화면에서 바로 확인할 수 있는 것에 재미를 느껴 <br>
+                           프론트엔드 개발자를 꿈꾸게 되었습니다.</p>
+                        <ul class="personal-info">
+                            <li><span class="info-label">Name </span> Go YuJin</li>
+                            <li><span class="info-label">Date of Birth </span> March 1, 2001</li>
+                            <li><span class="info-label">School/Major</span> KwangWoon University, Information Convergence</li>
+                            <li><span class="info-label">MBTI</span> ISTP</li>
+                            <a href="https://github.com/g0yujin" target="_blank">
+                                <img src="src/github.png" alt="Link Image" class="link-image">
+                            </a>  
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What I Love -->
+        <section id="what-i-love">
+            <div class="love-content">
+                <h2>What I Love</h2>
+                <div class="love-slider">
+                    <div class="love-slide">
+                        <img src="src/love-nature.jpeg" alt="Nature" class="love-image">
+                        <p>Nature</p>
+                    </div>
+                    <div class="love-slide">
+                        <img src="src/love-exhibitions.jpeg" alt="Exhibitions" class="love-image">
+                        <p>Exhibitions</p>
+                    </div>
+                    <div class="love-slide">
+                        <img src="src/love-pic.jpeg" alt="Taking pictures and videos" class="love-image">
+                        <p>Taking pictures and videos</p>
+                    </div>
+                    <div class="love-slide">
+                        <img src="src/love-travel.jpeg" alt="Travel" class="love-image">
+                        <p>Travel</p>
+                    </div>
+                    <div class="love-slide">
+                        <img src="src/love-cho.jpeg" alt="Cho Seol" class="love-image">
+                        <p>Cho Seol</p>
+                    </div>
+                    <div class="love-slide">
+                        <img src="src/love-chu.jpeg" alt="Chu YangSun" class="love-image">
+                        <p>Chu YangSun</p>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button id="prev-slide">
+                        <img src="src/prev.svg" alt="Previous">
+                    </button>
+                    <button id="next-slide">
+                        <img src="src/next.svg" alt="Next">
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Guest Book -->
+        <section id="guest-book">
+            <div class="guest-book-content">
+                <h2>Guest Book</h2>
+                <form id="guest-form">
+                    <input type="text" id="guest-name" placeholder="Your Name" required>
+                    <textarea id="guest-message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+                <div id="guest-messages">
+                    <!-- 방명록 추가 -->
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
